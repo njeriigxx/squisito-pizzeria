@@ -1,0 +1,6 @@
+.home {
+    background-image: url(Images/brick-oven-pizza1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
