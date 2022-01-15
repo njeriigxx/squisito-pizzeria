@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     }
 
+
     Order.prototype.pizzaCost = function () {
         //pizza size and its cost
         if (this.size === "small-pizza") {
@@ -63,37 +64,37 @@ $(document).ready(function () {
         this.deliveryAddress = (addresses);
     }
 
-//     //order
-//     Order.prototype.finalCost = function () {
-//         var cartTotalPrice = [];
-//         for (var arrayElement = 0; arrayElement < priceArray.length; arrayElement++) {
-//             cartTotalPrice += priceArray[arrayElement];
-//         }
-//         return cartTotalPrice;
-//     };
-//     //customers selection 
-//     $("form#custom-pizza").submit(function (event) {
-//         event.preventDefault();
-//         var size = $("select#size").val();
-//         var crust = $("select#crust").val();
-//         var toppings = $("select#toppings").val();
-//         var pizzaDetails = (size + " ," + crust + " crust with " + toppings);
-//         var newPizzaOrder = new Order(size, crust, toppings);
-//         newPizzaOrder.pizzaCost();
-//         priceArray.push(newPizzaOrder.pizzaPrice);
-//         $("#pizza-cost").text(newPizzaOrder.finalCost());
-//         $("#output-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
+    //order
+    Order.prototype.finalCost = function () {
+        var cartTotalPrice = [];
+        for (var arrayElement = 0; arrayElement < priceArray.length; arrayElement++) {
+            cartTotalPrice += priceArray[arrayElement];
+        }
+        return cartTotalPrice;
+    };
+    //customers selection 
+    $("form#custom-pizza").submit(function (event) {
+        event.preventDefault();
+        var size = $("select#size").val();
+        var crust = $("select#crust").val();
+        var toppings = $("select#toppings").val();
+        var pizzaDetails = (size + " ," + crust + " crust with " + toppings);
+        var newPizzaOrder = new Order(size, crust, toppings);
+        newPizzaOrder.pizzaCost();
+        priceArray.push(newPizzaOrder.pizzaPrice);
+        $("#pizza-cost").text(newPizzaOrder.finalCost());
+        $("#output-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
 
-//     });
-//     $("#checkout-btn").click(function () {
-//         $("#final-order-details").toggle();
-//     });
-//     $("form#address-form").submit(function (event) {
-//         $(".address-form").toggle();
-//         event.preventDefault();
-//         var address = $("input#location").val();
-//         var newAddress = new Address(address);
-//         $("#delivery-option").text("Your pizza is being prepared once done it will be delivered to " + newAddress.deliveryAddress + "at a fee of ksh 150.");
-//     });
+    });
+    $("#checkout-btn").click(function () {
+        $("#final-order-details").toggle();
+    });
+    $("form#address-form").submit(function (event) {
+        $(".address-form").toggle();
+        event.preventDefault();
+        var address = $("input#location").val();
+        var newAddress = new Address(address);
+        $("#delivery-option").text("Your pizza is being prepared once done it will be delivered to " + newAddress.deliveryAddress + "at a fee of ksh 150.");
+    });
 
-// });
+});
