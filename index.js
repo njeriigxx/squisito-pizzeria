@@ -1,4 +1,4 @@
-//hidding the oder details by default
+//hidding the order details by default
 
 $(document).ready(function () {
     $("#final-order-details").hide();
@@ -19,44 +19,44 @@ $(document).ready(function () {
     }
 
 
-    Order.prototype.pizzaCost = function () {
-        //pizza size and its cost
-        if (this.size === "small-pizza") {
-            this.pizzaPrice += 550;
-        } else if (this.size === "medium-pizza") {
-            this.pizzaPrice += 800;
-        } else if (this.size === "large-pizza") {
-            this.pizzaPrice += 1200;
-        } else if (this.size === "jumbo") {
-            this.pizzaPrice += 1500;
-        }
-        //pizza crust and its cost
-        if (this.crust === "cheese-filled") {
-            this.pizzaPrice += 150;
-        } else if (this.crust === "gluten-free") {
-            this.pizzaPrice += 185;
-        } else if (this.crust === "stuffed") {
-            this.pizzaPrice += 170;
-        } else if (this.crust === "crispy") {
-            this.pizzaPrice += 150;
-        }
-        //pizza toppings and its cost
-        if (this.toppings === "pepperoni") {
-            this.pizzaPrice += 100;
-        } else if (this.toppings === "olives") {
-            this.pizzaPrice += 150;
-        } else if (this.toppings === "bacon") {
-            this.pizzaPrice += 250;
-        } else if (this.toppings === "mushrooms") {
-            this.pizzaPrice += 150;
-        } else if (this.toppings === "chicken-bbq") {
-            this.pizzaPrice += 250;
-        } else if (this.toppings === "pinapple") {
-            this.pizzaPrice += 105;
-        } else if (this.toppings === "cheese") {
-            this.pizzaPrice += 165;
-        }
-    };
+    // Order.prototype.pizzaCost = function () {
+    //     //pizza size and its cost
+    //     if (this.size === "small-pizza") {
+    //         this.pizzaPrice += 550;
+    //     } else if (this.size === "medium-pizza") {
+    //         this.pizzaPrice += 800;
+    //     } else if (this.size === "large-pizza") {
+    //         this.pizzaPrice += 1200;
+    //     } else if (this.size === "jumbo") {
+    //         this.pizzaPrice += 1500;
+    //     }
+    //     //pizza crust and its cost
+    //     if (this.crust === "cheese-filled") {
+    //         this.pizzaPrice += 150;
+    //     } else if (this.crust === "gluten-free") {
+    //         this.pizzaPrice += 185;
+    //     } else if (this.crust === "stuffed") {
+    //         this.pizzaPrice += 170;
+    //     } else if (this.crust === "crispy") {
+    //         this.pizzaPrice += 150;
+    //     }
+    //     //pizza toppings and its cost
+    //     if (this.toppings === "pepperoni") {
+    //         this.pizzaPrice += 100;
+    //     } else if (this.toppings === "olives") {
+    //         this.pizzaPrice += 150;
+    //     } else if (this.toppings === "bacon") {
+    //         this.pizzaPrice += 250;
+    //     } else if (this.toppings === "mushrooms") {
+    //         this.pizzaPrice += 150;
+    //     } else if (this.toppings === "chicken-bbq") {
+    //         this.pizzaPrice += 250;
+    //     } else if (this.toppings === "pinapple") {
+    //         this.pizzaPrice += 105;
+    //     } else if (this.toppings === "cheese") {
+    //         this.pizzaPrice += 165;
+    //     }
+    // };
     //Business logic
     //setting up the addresses
     function Address(addresses) {
