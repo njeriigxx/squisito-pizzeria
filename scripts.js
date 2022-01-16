@@ -1,5 +1,3 @@
-//hidding the order details by default
-
 $(document).ready(function () {
     $("#final-order-details").hide();
     $("#deliver").hide();

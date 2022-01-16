@@ -1,271 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- stylesheet links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
     <title>Pizza</title>
 </head>
+
 <body>
-    <div class="home">
-    
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
-          </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Pizza</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Hawaiian Piza</a>
-            <a class="dropdown-item" href="#">Chicken & Pepper Pizza</a>
-            <a class="dropdown-item" href="#">Cheese & Ham Pizza</a>
-            <a class="dropdown-item" href="#">Chicken BBQ Pizza</a>
-            <a class="dropdown-item" href="#">Meatballs BBQ Pizza</a>
-            <a class="dropdown-item" href="#">Cheese Pizza</a>
-            <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">Separated link</a> 
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Sides</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Onion Rings</a>
-              <a class="dropdown-item" href="#">Chicken Wings</a>
-              <a class="dropdown-item" href="#">Potato Wedges</a>
-              <a class="dropdown-item" href="#">Garlic bread</a>
-              <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#">Separated link</a> 
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cocktails</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Pina Colada</a>
-              <a class="dropdown-item" href="#">Orange Mango Crush</a>
-              <a class="dropdown-item" href="#">Peachy Mint Iced Tea</a>
-              <a class="dropdown-item" href="#">Pineapple and Passionfruit </a>
-              <a class="dropdown-item" href="#">Long Island iced tea</a>
-              <a class="dropdown-item" href="#">Cranberry Sangaria</a>
-              <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#">Separated link</a> 
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Contact Us</a>
-          </li>   
-      </ul> <br>
-      <div class="about">
-      <h1><b><em>ABOUT US</em></b></h1> 
-      <h4><b><em>Welcome to Squisito Pizzeria</em></b></h4> <br><br>
-        <p>Situated on University Place, the new shop occupies the ground floor of a 19th-century building <br>
-            that once housed the famed Hotel Albert. The rectangular space totals 1,400 square feet (130 square metres). <br>
+    <!-- Start of navbar -->
+    <center>
+        <div class="container">
+            <div class="nav col-md-12">
+                <nav class="navbar navbar-expand-sm navbar navbar-bg-light">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#price-content">Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#custom-pizza">Pizza</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    </center>
+
+    <!-- logo -->
+    <div class="back">
+        <div class="col"></div>
+        <img src="Images/squisito pizzeria.png" alt="" style="height:200px;" width="210px">
+    </div><br>
+    </div><br>
+    <div class="about" style="color: rgb(213, 240, 240);">
+        <h2><b><em>Welcome to Squisito Pizzeria</em></b></h2> <br><br>
+        <p class="about1">Situated on Yaya Center, the new shop occupies the ground <br>
+            floor of a 19th-century building that once housed the famed Hotel Albert.<br> 
+            The rectangular space totals 1,400 square feet (130 square metres).<br>
             Housed in a charming historic building .An open kitchen and shelving made of Italian volcanic <br>
             stone feature in a Greenwich Village pizzeria designed by architecture firm Büro Koray Duman. <br>
-            Pizza was started in 2018 by the Naples-born chef Simone Falco and offers Neapolitan pizza <br>
+            Squisito Pizzeria was started in 2018 by the Naples-born chef Simone Falco and offers Neapolitan pizza <br>
             and other fare made with high-quality ingredients. This is the eatery's first location.</p><br>
-            <button type="button" class="btn btn-primary">Read More</button>
-        </div>
+        <button type="button" class="btn btn-primary" style="font-size: 25px;">Read More</button>
+    </div>
     </div> <br><br>
     <div class="menu">
-        <h4><b><em>Our Menu</em></b></h4>
+        <center>
+            <h2><b><em>Our Menu</em></b></h2>
+        </center>
     </div>
-    <div class="row">
-        <div class="column">
-          <img src="Images/hawaiian-pizza-pizza.png" alt=""  style="height:400px ; width: 550px;">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Crust
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Classic Crust</a></li>
-              <li><a href="#">Deep Pan</a></li>
-              <li><a href="#">Thin'N' Crispy</a></li>
-              <li><a href="#">Gluten-free </a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Size
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Small</a></li>
-              <li><a href="#">Medium</a></li>
-              <li><a href="#">Large</a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Size
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Extra Cheese</a></li>
-              <li><a href="#">Mushroom</a></li>
-              <li><a href="#">Onion</a></li>
-              <li><a href="#">Pepperoni</a></li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="column">
-          <img src="Images/buffalochicken pepper.jpg" alt=""  style="height:400px ; width: 550px;">
-        </div>
-        <div class="column">
-          <img src="Images/ham-pizza.jpg" alt=""  style="height:400px ; width: 550px;">
-        </div>
-      </div> <br><br>
-      <div class="row">
-        <div class="column">
-          <img src="Images/chicken bbq.jpeg" alt="" style="height:400px ; width: 550px;">
-        </div>
-        <div class="column">
-          <img src="Images/main. meatballsbbq.jpg" alt="" style="height:400px ; width: 550px;" >
-        </div>
-        <div class="column">
-          <img src="Images/Cheese-pizza-1.jpg" alt=""  style="height:400px ; width: 550px;">
-        </div>
-      </div> <br><br>
-
-      <center><h4>Sides</h4></center>
-      <div class="row">
-        <div class="column">
-          <img src="Images/onionrings.jpeg" alt="" style="height:300px ; width: 450px;">
-        </div>
-        <div class="column">
-          <img src="Images/wings.jpg" alt=""  style="height:300px ; width: 450px;" >
-        </div>
-        <div class="column">
-          <img src="Images/Baked-Potato-Wedges.jpg" alt=""  style="height:300px ; width: 450px;">
-        </div>
-        <div class="column">
-            <img src="Images/garlic bread.jpg" alt="" style="height:300px ; width: 450px;" >
-          </div>
-      </div> <br><br>
-
-      <center><h4>Drinks</h4></center>
-      <div class="row">
-        <div class="column">
-          <img src="Images/pina colada.jpeg" alt="" style="height:400px ; width: 550px;">
-        </div>
-        <div class="column">
-          <img src="Images/orange-mango-crush-110416-1.jpeg" alt="" style="height:400px ; width: 550px;" >
-        </div>
-        <div class="column">
-          <img src="Images/peachy-mint-iced-tea-110412-1.jpeg" alt=""  style="height:400px ; width: 550px;">
-        </div>
-        <div class="column">
-            <img src="Images/pineapple-and-passionfruit-soda-86910-1.jpeg" alt="" style="height:400px ; width: 550px;" >
-          </div>
-          <div class="column">
-            <img src="Images/Long-Island-Iced-Tea-6.jpg" alt=""  style="height:400px ; width: 550px;">
-          </div>
-          <div class="column">
-              <img src="Images/cranberry-sangria-131046-1.jpg" alt="" style="height:400px ; width: 550px;" >
-            </div>
-      </div> <br><br>
-
-      <div class="choose">
-          <h4> <b><em>Why Choose Us</b></em></h4><br><br>
-        <div class="column">
-            <img src="Images/food.jpg" alt="" style="height:400px ; width: 550px;" >
-            <p>The best pizza you have ever had in (City)!! The pizza is so delicious and with so many flavor could choose from .
-                Consistently great pizza with great variety of toppings and styles. Service is fast too along with our reasonable prices.
-                Can’t go wrong with Squisito Pizzeria. 
-            </p>
-          </div>
-          <div class="column">
-            <img src="Images/ambience.jpeg" alt=""  style="height:400px ; width: 550px;">
-            <p>“We eat with our eyes. This makes colour critical in most every aspect of successful restaurant designs.”
-                —  JACKIE LOHREY <br>
-                The ambience created by a restaurant is more abstract than concrete. However, the entire dining experience 
-                is enhanced and becomes great with the perfect “feel” exuded by a restaurant.
-                Creating the best restaurant atmosphere has been one of the major contributors to our success.
-            </p>
-          </div>
-          <div class="column">
-              <img src="Images/service.jpg" alt="" style="height:400px ; width: 550px;" >
-              <p>Providing food and drink services to guests in hotels and restaurants, <br>
-                  showing attentiveness, and understanding of their needs and expectations.
-                  That means that restaurant servers have extensive knowledge of all types of cuisine 
-                  and dishes, especially the ingredients and cooking style of the dishes on an a la carte menu.
-                 They will need to know and understand the methods of preparation and serving, along with the
-                  tools used.
-                </p>
-            </div>
-          </div>
-
-          <form>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Email">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Phone">
-              </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="No of people">
-                </div>
-                <div class="col">
-                    <label for="birthday">Birthday:</label>
-                    <input type="date" id="birthday" name="birthday">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Your Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <button type="button" class="btn btn-primary">Book Your Table</button>
-          </form> <br>
-          <div>
-          </div>
-          <div class="footer-dark">
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>Services</h3>
-                            <ul>
-                                <li><a href="#">Dining</a></li>
-                                <li><a href="#">Parties</a></li>
-                                <li><a href="#">Lunches</a></li>
-                            </ul>
+    <form class="form-group" id="custom-pizza">
+        <div class="orders">
+            <div class="row">
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="Images/chicken bbq.jpeg" class="card-img-top" alt="moretopings" width="0 px"
+                            height="338 px">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Sizes.</h5>
+                            <p class="card-text">Select the pizza size:</p>
+                            <select required class="form-control" id="size">
+                                <option value="large-pizza">large - 1800/=</option>
+                                <option value="medium-pizza">medium - 900/=</option>
+                                <option value="small-pizza">small - 350/=</option>
+                            </select>
                         </div>
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>About</h3>
-                            <ul>
-                                <li><a href="#"> Our Menu</a></li>
-                                <li><a href="#">Why Choose Us</a></li>
-                                <li><a href="#">Book Your Table</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 item text">
-                            <h3>Squisito Pizzeria</h3>
-                            <p>This cozy restaurant that will leave you with the best impressions! <br> 
-                                Hospitable hosts, delicious dishes, beautiful presentation and variety of drinks
-                                 list. Visit our restaurant when you visit Nairobi for a top-notch 
-                                 overall experience</p>
-                        </div>
-                        <div class="col item social"><a href="#"><img src="Images/icons8-facebook-48.png" alt=""></i></i></a><a href="#"><img src="Images/5296516_tweet_twitter_twitter logo_icon.png" alt=""></i></a><a href="#"><img src="Images/5296765_camera_instagram_instagram logo_icon.png" alt=""></div>
                     </div>
-                    <p class="copyright" style=" color:#f0f9ff;;">Squisito Pizzeria © 2021</p>
                 </div>
-            </footer>
-  
+                <!-- Crust selection section -->
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="Images/Cheese-pizza-1.jpg" class="card-img-top" alt="chickenpizza" height="338 px">
+                        <div class="card-body">
+                            <h5 class="card-title">Crust.</h5>
+                            <p class="card-text">Choose your preferred crust:</p>
+                            <select required class="form-control" id="crust">
+                                <option value="classic-crust">Classic crust - 180/=</option>
+                                <option value="thin 'n' crispy">Thin 'N' Crispy crust- 100/=</option>
+                                <option value="gluten-free-base">Gluten free crust - 280/=</option>
+                                <option value="deep-pan">Deep-pan crust - 210/=</option>
+                                <option value="crispy">Crispy crust - 100/=</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Toppings section -->
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="Images/ham-pizza.jpg" class="card-img-top" alt="tablepizza" width="280 px"
+                            height="338 px">
+                        <div class="card-body">
+                            <h5 class="card-title">Toppings.</h5>
+                            <p class="card-text">Choose your preferred toppings:</p>
+                            <select required class="form-control" id="toppings">
+                                <option value="cheese">Extra cheese - 200/=</option>
+                                <option value="pepperoni">Pepperoni - 150/=</option>
+                                <option value="onions"> Onions - 250/=</option>
+                                <option value="bacon">Bacon - 145/=</option>
+                                <option value="green pepper"> Green Pepper - 80/=</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <!-- Customer inputs -->
+        <button type="submit" class="order-button btn btn-success" id="submit-pizza" style="font-size: 25px;">Add to
+            cart</button>
+        <input type="number" id="amount" placeholder="Number of pizza" required min="1">
+    </form>
+    <div class="col-xs-4" id="price-content">
+        <h1 class="page-header">Cart</h1>
+        <h2>The Price will be Ksh <span id="pizza-cost"></span></h2><br>
+        <div id="customer-delivery" class="deliver">
+            <h5>Standard Delivery for Nairobi <br>
+                delivery fee of Ksh.150?</h5>
+            <form id="address-form">
+                <div class="col-xs-6">
+                    <label for="first-name"></label>
+                    <input id="location" type="text" size="40" placeholder="Input your location here..." />
+                    <button class="btn btn-success complete" type="submit" style="font-size: 25px;">Enter</button>
+                    <h3><span id="delivery-option"></span></h3>
+                </div>
+            </form>
+        </div><br>
+        <!-- Checkout section -->
+        <button type="btn" class="btn btn-success" id="checkout-btn" style="font-size: 25px;">CheckOut</button><br><br>
+        <div id="final-order-details" class="col-xs-12">
+            <ul id="output-details" style="font-size: 25px;"><strong>Here's Your order: </strong></ul>
+            <h5 id="pizza-details" style="font-size: 25px;">Your order is on your way.Welcome again!</h5>
+        </div>
+    </div> <br><br>
 
+    <div class="choose">
+        <!-- <center><h2> <b><em>Why Choose Us</b></em></h2><br><br></center> -->
+        <div class="choose-pic1" style="padding-right: 2%;">
+            <img src="Images/food.jpg" alt="" style="height:400px ; width: 550px;">
+            <p>The best pizza you have ever had in (City)!! The pizza is so delicious <br>
+                and with so many flavor could choose from . <br>
+                Consistently great pizza with great variety of toppings and styles. <br>
+                Service is fast too along with our reasonable prices. <br>
+                Can’t go wrong with Squisito Pizzeria. <br>
+            </p>
+        </div><br>
+        <div class="choose-pic2">
+            <img src="Images/ambience.jpeg" alt="" style="height:400px ; width: 550px;">
+            <p>“We eat with our eyes. This makes colour critical in most every aspect <br>
+                of successful restaurant designs.”—  JACKIE LOHREY <br>
+                The ambience created by a restaurant is more abstract than concrete. <br>
+                However, the entire dining experience is enhanced and becomes great <br>
+                with the perfect “feel” exuded by a restaurant. Creating the best <br>
+                restaurant atmosphere has been one of the major contributors to our success. <br>
+            </p>
+        </div><br>
+        <div class="choose-pic3">
+            <img src="Images/service.jpg" alt="" style="height:400px ; width: 550px;">
+            <p>Providing food and drink services to guests in hotels and restaurants, <br>
+                showing attentiveness, and understanding of their needs and expectations. <br>
+                That means that restaurant servers have extensive knowledge of all types <br>
+                of cuisine and dishes, especially the ingredients and cooking style of <br>
+                the dishes on an a la carte menu.They will need to know and understand <br>
+                the methods of preparation and serving, along with the tools used.
+            </p>
+        </div>
+    </div><br><br>
 
+    <Center>
+        <form>
+            <h2>Book Your Table</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email" style="width: 40%;">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                    style="width: 40%;">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-size: 25px; width: 40%;">Submit</button>
+        </form>
+    </Center><br>
+    <!-- Footer -->
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>  
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Dining</a></li>
+                            <li><a href="#">Parties</a></li>
+                            <li><a href="#">Lunches</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#"> Our Menu</a></li>
+                            <li><a href="#">Why Choose Us</a></li>
+                            <li><a href="#">Book Your Table</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h2>Squisito Pizzeria</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.802604787747!2d36.78614461475392!3d-1.2928743990570222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a3dc8a2425%3A0x94e48314489213d4!2sYaya%20Centre!5e0!3m2!1sen!2ske!4v1642326037542!5m2!1sen!2ske"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <p>This cozy restaurant that will leave you with the best impressions! <br>
+                            Hospitable hosts, delicious dishes, beautiful presentation and variety of drinks
+                            list. Visit our restaurant when you visit Nairobi for a top-notch
+                            overall experience.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><img src="Images/icons8-facebook-48.png"
+                                alt=""></i></i></a><a href="#"><img
+                                src="Images/5296516_tweet_twitter_twitter logo_icon.png" alt=""></i></a><a href="#"><img
+                                src="Images/5296765_camera_instagram_instagram logo_icon.png" alt=""></div>
+                </div>
+                <p class="copyright" style=" color:white; font-size: 25px;">Squisito Pizzeria © 2021</p>
+            </div>
+        </footer>
+        <!-- scripts links -->
+        <script src="jquery.js"></script>
+        <script src="scripts.js"></script>
 </body>
+
 </html>
