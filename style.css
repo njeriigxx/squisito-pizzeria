@@ -1,24 +1,85 @@
-.home {
-    background-image: url(Images/brick-oven-pizza1.jpg);
-    height: 100vh;
+body {
+    background-image: url(Images/images.jpeg);
+    color: rgb(213, 240, 240);
+    position: relative;
     background-repeat: no-repeat;
+    /* background-color: rgb(34, 33, 33); */
     background-size: cover;
+    font-size: 25px;
+    line-height: 1.62em;
+   
+}
+h2 {
+    text-decoration-line: underline;
+}
+
+.nav {
+    height: 150px;
+    
+    color:black;
+    border-bottom: 3px solid #fff;
+}
+
+img{
+    border-radius: 1cm;
 }
 .about {
+    font-size: 1.25em;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+    font-weight: bold;
     text-align: center;
-    color: aliceblue;
-    padding-top: 18%;
 }
- .row {
+
+.card {
+    width: 80%;
+    min-height: 460px;
+    max-width: 700px;
+    margin-top: 60px;
+    border-radius: 12px;
+    position: relative;
+    color:blue;
+    background: #fff;
+    
+}
+h2 {
+    text-decoration-line: underline;
+    text-align: center;
+    color: #fff;
+}
+.orders {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+#submit-pizza ,#amount {
+    float: right;
+    margin-right: 200px;
+    color: black;
+}
+#price-content {
+    text-align: center;
+    color: #fff;
+}
+#amount{
+    margin-left: 79%;
+}
+.choose{
     display: flex;
-  }
-  
-  .column {
-     padding: 5px;
-    /* flex: 33.33%;
-    padding: 5px; */
-  } 
-  .footer-dark {
+    flex-direction: row;
+    padding-left: 5%;
+    line-height: normal;
+    font-size: 20px;
+} 
+
+button {
+    width: 40%;
+}
+
+.footer-dark {
     padding:50px 0;
     color:#f0f9ff;
     background-color:#282d32;
@@ -28,20 +89,22 @@
     margin-top:0;
     margin-bottom:12px;
     font-weight:bold;
-    font-size:16px;
+    font-size:25px;
   }
   
   .footer-dark ul {
     padding:0;
     list-style:none;
     line-height:1.6;
-    font-size:14px;
+    font-size:25px;
     margin-bottom:0;
+    font-size: 25px;
   }
   
   .footer-dark ul a {
     color:inherit;
     text-decoration:none;
+    font-size: 25px;
     opacity:0.6;
   }
   
@@ -83,7 +146,7 @@
   }
   
   .footer-dark .item.social > a {
-    font-size:20px;
+    font-size:25px;
     width:36px;
     height:36px;
     line-height:36px;
