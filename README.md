@@ -1,6 +1,6 @@
 By Njeri Gathuku
 
-Description This is a Squisito Pizzeria - pizza sit in and delivery restaurant. Additionally, the website enables users to order different sizes of pizza, the types of crusts & toppings, however many pizzas customers wish to order.A text  displays the result which is  the total amount including the standard delivery for NNairobi delivery which is standard.
+Description This is a Squisito Pizzeria - pizza sit in and delivery restaurant. Additionally, the website enables users to order different sizes of pizza, the types of crusts & toppings, however many pizzas customers wish to order.A text  displays the result which is  the total amount including the standard delivery for Nairobi delivery which is standard.
 
 Setup/Installation Requirements 1)Install the Visual studio code 2)Git clone the repository 3)Make sure the live server extension is installed 4)Click on Go live
 
